@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pembelajaran</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+    
+<body>
+
+<!-- Begin Halaman Utama -->        
+<div id="utama" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Aplikasi Pembelajaran</h1>
+	</div>
+
+	<div data-role="content">
+		<a href="#listSemesterPage" data-role="button">Pilih Semester</a>
+		<a href="help.html" data-role="button" data-rel="dialog">Bantuan</a>
+    </div>
+
+</div>
+<!-- End Halaman Utama -->
+
+<!-- Begin Halaman List Semester -->
+<div data-role="page" id="listSemesterPage" data-add-back-btn="true"> 
+	<div data-role="header"  data-position="fixed"> 
+		<h1>Pilih Semester</h1> 
+	</div> 
+	<div data-role="content"> 
+		<ul id="listSemester" data-role="listview" data-filter="true"></ul>
+	</div> 
+	<div data-role="footer"> 
+		<h4>Created By: Ganjar Setia M. <a href="http://www.ganjarsolutions.com/" rel="external">ganjarsolutions.com</a>
+			<br>
+		Click back to go back to main page
+		</h4> 
+	</div> 
+</div> 
+<!-- End Halaman List Semester --> 
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/listsemester.js"></script>
+<script src="js/showlistbab.js"></script>
+<script src="js/showmateri.js"></script>
+
+</body>
+
+</html>
